@@ -1,0 +1,199 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    background-color: black;
+}
+
+header {
+    .container {
+        position: absolute;
+        z-index: 99;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: solid 1px #DAC5A726;
+        padding: 12px;
+        background-color: rgba(218, 197, 167, 0.15);
+        width: 40%;
+        transform: translateX(70%);
+        backdrop-filter: blur(10px);
+    }
+
+    .mynav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .mynav ul li {
+        color: rgba(218, 197, 167, 1);
+      }
+     
+      .mynav a {
+        display: block;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 1);
+        text-decoration: none;
+        padding: 7px 15px;
+      }
+      .target:hover {
+        position: absolute;
+        border-bottom: 4px solid yellow;
+        z-index: 99;
+        transform: translateX(-60px);
+      }
+      .target {
+        transition: all .35s ease-in-out;
+      }
+      button {
+        border: solid 1px rgba(218, 197, 167, 1);
+        border-radius: 2px;
+        padding: 10px;
+        background-color: rgba(218, 197, 167, 1);
+        cursor: pointer;
+      }
+}
+
+section.welcome {
+    display: flex;
+    gap: 64px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+
+    .welcome-text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        position: relative;
+        
+        h3{
+            color: rgba(218, 197, 167, 1);
+            font-size: 140px;
+            font-weight: 100;
+            line-height: 160px;
+            text-align: center;
+        }
+        p{
+            color: rgba(255, 255, 255, 0.6);
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .arrow-pointer {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 64px;
+
+            img {
+                border: solid 1px rgba(218, 197, 167, 0.05);
+                padding: 10px;
+                background-color: rgba(218, 197, 167, 0.05);
+                border-radius: 50px;
+                cursor: pointer;
+            }
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+    img{
+        &.leptop {
+            width: 1000px;
+            height: 600px;
+        }
+    }
+}
+
+section.status {
+    .container {
+        padding: 360px;
+        padding-top: 80px;
+        display: flex;
+        gap: 70px;
+    }
+
+    .statistics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        p {
+            font-size: 13px;
+            color: rgba(218, 197, 167, 0.6);
+        }
+        h5 {
+            font-size: 63px;
+            color: rgba(218, 197, 167, 1);
+        }
+    }
+}
+
+section.webdesign {
+    .container {
+        padding-left: 360px;
+        padding-right: 360px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        p {
+            color: rgba(218, 197, 167, 1);
+            font-size: 13px;
+        }
+        h5 {
+            color: rgba(218, 197, 167, 1);
+            font-size: 50px;
+            margin-top: 16px;
+            margin-bottom: 48px;
+        }
+        img {
+            width: 650px;
+            height: 500px;
+        }
+
+        .webdesign-windows {
+            border: solid 1px rgba(218, 197, 167, 0.15);
+            background-color: rgba(218, 197, 167, 0.15);
+            padding: 64px;
+
+            .window-text {
+                display: flex;
+                gap: 150px;
+                span{
+                    font-size: 13px;
+                    color: rgba(218, 197, 167, 1);
+                }
+                p {
+                    font-size: 13px;
+                    color: rgba(218, 197, 167, 0.6);
+                }
+            }
+            .window-text:not(:last-child) {
+                border-bottom: solid 1px rgba(218, 197, 167, 0.15);
+                padding: 48px;
+        }
+        .window-text:last-child {
+            margin-top: 48px;
+            p {
+                font-size: 13px;
+                color: rgba(218, 197, 167, 0.6);
+            }
+        }
+    }
+}
+section.talk p {
+    color: rgba(218, 197, 167, 1);
+    font-size: 13px;
+}
