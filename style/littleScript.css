@@ -41,6 +41,11 @@ body {
 
     animation-name: animatemodal;
     animation-duration: .4s;
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 #colse-btn {
